@@ -5,8 +5,23 @@
         <title>Formulário de Cadastro de Viagens</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body {min-height: 100%}
+            footer {position: absolute; height: 2.5rem; width: 100%; bottom: 0}
+            .position-relative {position: relative}
+          </style>
       </head>
       <body>
+        <header>
+            <div class="menu-topo">
+                <a href="https://www.digitalhouse.com/"> <img src="../img/logoDigitalHouse.png" alt="digitalHouse"></a>
+                <ul class="lista-menu">
+                    <li class="home"><a href="./index.html">Cadastro</a></li>
+                    <li><a href="#cards-itens">Cards</a></li>
+                    <li><a href="#rodape">Sobre nós</a></li>                    
+                </ul>
+            </div>
+        </header>
         <div class="container" >
           <a class="links" id="paracadastro"></a>
           <a class="links" id="paralogin"></a>
@@ -29,7 +44,7 @@
                  
                 <p> 
                   <label for="email_cad">Descrição</label>
-                  <input id="email_cad" name="email_cad" required="required" type="text"/> 
+                  <textarea rows="10" cols="60" required="required"></textarea>                  
                 </p>
                  
                 
@@ -41,8 +56,7 @@
                     <label for="senha_cad">Vai visitar</label>
                     <input id="checkbox_01" name="senha_cad" type="checkbox"/>
                     
-                  </p>
-                  
+                  </p>                  
                 
                 <p> 
                   <input type="submit" value="Cadastrar"/> 
@@ -51,6 +65,80 @@
                 </form>
             </div>
           </div>
-        </div>  
+        </div>
+
+        <!-- Aqui iremos Criar as Div no Dom com essas Classes
+
+    <h2 id="itens">Itens</h2>
+
+            <div class="banner-cards">
+                <div class="cards">
+                    <div class="card-filme">
+                        <img src="./img/img-movies/filme1.png" class="filme" alt="Poster do filme Joker">
+
+                        <div class="texto-filme">
+                            <p class="titulos">Joker</p>
+                            <p class="descricao">Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante
+                                Arthur Fleck inicia seu caminho como uma mente criminosa após assassinar três homens em pleno
+                                metrô. Sua ação inicia um movimento popular contra a elite de Gotham City, da qual Thomas Wayne
+                                é seu maior representante.</p>
+                            <button class="botao-abrir"><a href="./movies/joker.html">Abrir</a></button>
+                        </div>
+                    </div>
+                </div>
+
+        -->
+        
       </body>
-      </html>
+      <footer>
+        <div id="rodape">
+            <div class="item-rodape">
+                <p class="nomes">Douglas Henrique F de Oliveira</p>
+                <p class="dev">Responsável pelo desenvolvimento do site</p>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/douglas-oliveira-86420372/">
+                        <img src="../img/linked.png" class="linked" title="Linkedin Douglas Henrique">
+                    </a>
+                    <a href="https://github.com/Djgoliveira">
+                        <img src="../img/gitHub.png" title="GitHub Douglas Henrique" alt="GitHub">
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="item-rodape">
+                <p class="nomes">Gustavo Florencio</p>
+                <p class="dev">Responsável pelo desenvolvimento do site</p>
+                <div class="links">
+                    <a href="https://www.linkedin.com/">
+                        <img src="../img/linked.png" class="linked" title="Linkedin Gustavo Florencio">
+                    </a>
+                    <a href="https://github.com/mcnunesm">
+                        <img src="../img/gitHub.png" title="GitHub Gustavo Florencio">
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="item-rodape">
+                <p class="nomes">Rafael</p>
+                <p class="dev">Responsável pelo desenvolvimento do site</p>
+                <div class="links">
+                    <a href="#">
+                        <img src="../img/linked.png" class="linked" title="Linkedin Rafael">
+                    </a>
+                    <a href="https://github.com/">
+                        <img src="../img/gitHub.png" title="GitHub Rafael ">
+                    </a>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <p class="rodape-fim">Checkpoint 3 desenvolvido em 2023</p>
+
+    </footer>
+    <script>
+        if (document.querySelector('body').offsetHeight > window.innerHeight)
+          document.querySelector('footer').classList.add('footer-relative');
+    </script>
+        </html>
