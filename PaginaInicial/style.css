@@ -69,6 +69,11 @@ li:hover {
     width: 500px;
     margin: 0px auto;
     position: relative; 
+    
+  }
+  .container {
+    height: 700px;
+    
   }
   
   /* formatando o cabeçalho dos formulários */
@@ -309,4 +314,59 @@ li:hover {
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
+}
+
+
+
+.banner-cards {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: #171717;
+    
+}
+
+.card-img {
+    height: 650px;
+    display: inline;
+}
+
+#itens {
+    font-size: 44px;
+    padding: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.titulos {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.texto-img {
+    background-color: #f4f4f4;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    width: 329px;
+    height: 386px;
+}
+
+.descricao {
+    width: 311px;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 290;
+    text-align: justify;
+    padding: 10px;
 }

@@ -22,14 +22,12 @@
                 </ul>
             </div>
         </header>
-        <div class="container" >
-          <a class="links" id="paracadastro"></a>
-          <a class="links" id="paralogin"></a>
+        <div class="container" >       
            
           <div class="content">            
             <!--FORMULÁRIO DE CADASTRO-->
             <div id="cadastro">
-              <form method="post" action=""> 
+              <form method="post" action="."> 
                 <h1>Cadastro de Pontos Turísticos</h1> 
                  
                 <p> 
@@ -38,13 +36,13 @@
                 </p>
 
                 <p> 
-                    <label for="senha_cad">Url da Imagem</label>
-                    <input id="senha_cad" name="senha_cad" required="required" type="text" placeholder="Url da Imagem"/>
+                    <label for="url_cad">Url da Imagem</label>
+                    <input id="url_cad" name="url_cad" required="required" type="text" placeholder="Url da Imagem"/>
                   </p>
                  
                 <p> 
                   <label for="email_cad">Descrição</label>
-                  <textarea rows="10" cols="60" required="required"></textarea>                  
+                  <textarea id="descricao_cad" rows="10" cols="60" required="required"></textarea>                  
                 </p>
                  
                 
@@ -66,31 +64,12 @@
             </div>
           </div>
         </div>
-
-        <!-- Aqui iremos Criar as Div no Dom com essas Classes
-
-    <h2 id="itens">Itens</h2>
-
-            <div class="banner-cards">
-                <div class="cards">
-                    <div class="card-filme">
-                        <img src="./img/img-movies/filme1.png" class="filme" alt="Poster do filme Joker">
-
-                        <div class="texto-filme">
-                            <p class="titulos">Joker</p>
-                            <p class="descricao">Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante
-                                Arthur Fleck inicia seu caminho como uma mente criminosa após assassinar três homens em pleno
-                                metrô. Sua ação inicia um movimento popular contra a elite de Gotham City, da qual Thomas Wayne
-                                é seu maior representante.</p>
-                            <button class="botao-abrir"><a href="./movies/joker.html">Abrir</a></button>
-                        </div>
-                    </div>
-                </div>
-
-        -->
-        
+        <script src="./index.js"></script>
+            
       </body>
-      <footer>
+      
+    <!--
+ <footer>
         <div id="rodape">
             <div class="item-rodape">
                 <p class="nomes">Douglas Henrique F de Oliveira</p>
@@ -141,4 +120,5 @@
         if (document.querySelector('body').offsetHeight > window.innerHeight)
           document.querySelector('footer').classList.add('footer-relative');
     </script>
+    --> 
         </html>
