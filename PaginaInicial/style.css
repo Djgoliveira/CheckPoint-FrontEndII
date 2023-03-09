@@ -108,6 +108,10 @@
   input[type="submit"]:hover{
     background: #4ab3c6;
   }
+
+  #email_cad{
+    height: 200px;
+  }
   
   /*marcando os links para mudar de um formulário para outro */
   .link{
