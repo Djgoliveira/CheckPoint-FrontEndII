@@ -27,44 +27,52 @@
           <div class="content">            
             <!--FORMULÁRIO DE CADASTRO-->
             <div id="cadastro">
-              <form method="post" action="."> 
+              <div  > 
                 <h1>Cadastro de Pontos Turísticos</h1> 
                  
                 <p> 
-                  <label for="nome_cad">Título</label>
-                  <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome da Cidade" />
+                  <label for="nome_cad">Cidade</label>
+                  <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome da Cidade" minlength="4" />
+                </p>
+
+                <p> 
+                  <label for="local_cad">Ponto turistico</label>
+                  <input id="NomeLocal_cad" name="NomeLocal_cad" required="required" type="text" placeholder="Nome do local" minlength="4" />
                 </p>
 
                 <p> 
                     <label for="url_cad">Url da Imagem</label>
                     <input id="url_cad" name="url_cad" required="required" type="text" placeholder="Url da Imagem"/>
-                  </p>
+                </p>
                  
                 <p> 
                   <label for="email_cad">Descrição</label>
-                  <textarea id="descricao_cad" rows="10" cols="60" required="required"></textarea>                  
+                  <textarea id="descricao_cad" rows="10" cols="60" required="required" minlength="4"></textarea>                  
                 </p>
-                 
-                
 
                 <p>
-                    <label for="senha_cad">Já visitou</label>
-                    <input id="checkbox_01" name="senha_cad" type="checkbox"/>
+                  <label for="senha_cad">Já visitou</label>
+                  <input id="checkbox_01" name="senha_cad" type="checkbox"/>
 
-                    <label for="senha_cad">Vai visitar</label>
-                    <input id="checkbox_01" name="senha_cad" type="checkbox"/>
-                    
-                  </p>                  
-                
-                <p> 
-                  <input type="submit" value="Cadastrar"/> 
+                  <label for="senha_cad">Vai visitar</label>
+                  <input id="checkbox_01" name="senha_cad" type="checkbox"/>
+                  
                 </p>
-                 
-                </form>
+                <div> 
+                  <input type="submit" value="Cadastrar" onclick="Cadrastrar()"/> 
+                </div>
+              </div>
+                            
             </div>
-          </div>
+
+              
+            </div> 
+          </div>          
         </div>
-        <script src="./index.js"></script>
+        
+        
+        <div id="ElementoPai"></div>
+        <script src="./javaScript/codigo.js"></script>
             
       </body>
       
