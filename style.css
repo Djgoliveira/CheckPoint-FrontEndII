@@ -286,6 +286,7 @@ li:hover {
   footer{
    bottom: auto;
    width: 100%;
+       align-items: flex-end;
    text-align: center;
    color: rgb(255, 255, 255);
   }
