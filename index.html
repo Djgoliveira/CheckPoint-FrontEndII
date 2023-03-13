@@ -14,25 +14,25 @@
       <body>
         <header>
             <div class="menu-topo">
-                <a href="https://www.digitalhouse.com/"> <img src="../img/logoDigitalHouse.png" alt="digitalHouse"></a>
+                <a href="https://www.digitalhouse.com/"> <img src="./img/logoDigitalHouse.png" alt="digitalHouse"></a>
                 <ul class="lista-menu">
                     <li class="home"><a href="./index.html">Cadastro</a></li>
-                    <li><a href="#cards-itens">Cards</a></li>
+                    <li><a href="#ElementoPai">Cards</a></li>
                     <li><a href="#rodape">Sobre nós</a></li>                    
                 </ul>
             </div>
         </header>
         <div class="container" >       
            
-          <div class="content">            
+          <div class="content">     
             <!--FORMULÁRIO DE CADASTRO-->
-            <div id="cadastro">
-              <div  > 
-                <h1>Cadastro de Pontos Turísticos</h1> 
-                 
+            
+            <form method="dialog" action="" id="cadastro">
+              <div> 
+                <h1>Cadastro de Pontos Turísticos</h1>                  
                 <p> 
-                  <label for="nome_cad">Cidade</label>
-                  <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome da Cidade" minlength="4" />
+                  <label for="nome_cad">Cidade</label>                  
+                  <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome da Cidade" minlength="4"/>
                 </p>
 
                 <p> 
@@ -59,74 +59,64 @@
                   
                 </p>
                 <div> 
-                  <input type="submit" value="Cadastrar" onclick="Cadrastrar()"/> 
+                  <input id="btn" type="submit" value="Cadastrar"/> 
+                  <button type="reset" value="limpar">Limpar</button>
                 </div>
               </div>
                             
-            </div>
+            </form>
 
               
             </div> 
           </div>          
         </div>
-        
-        
-        <div id="ElementoPai"></div>
-        <script src="./javaScript/codigo.js"></script>
-            
-      </body>
-      
-    <!--
- <footer>
-        <div id="rodape">
-            <div class="item-rodape">
-                <p class="nomes">Douglas Henrique F de Oliveira</p>
-                <p class="dev">Responsável pelo desenvolvimento do site</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/douglas-oliveira-86420372/">
-                        <img src="../img/linked.png" class="linked" title="Linkedin Douglas Henrique">
-                    </a>
-                    <a href="https://github.com/Djgoliveira">
-                        <img src="../img/gitHub.png" title="GitHub Douglas Henrique" alt="GitHub">
-                    </a>
-                    
-                </div>
-            </div>
-            <div class="item-rodape">
+        <div id="ElementoPai">
+          <dialog></dialog>
+        </div>
+
+        <script src="./javaScript/codigo.js"></script> 
+
+        <footer>
+          <div id="rodape">
+              <div class="item-rodape">
+                  <p class="nomes">Douglas Henrique F de Oliveira</p>
+                  <p class="dev">Responsável pelo desenvolvimento do site</p>
+                  <div class="links">
+                      <a href="https://www.linkedin.com/in/douglas-oliveira-86420372/">
+                          <img src="./img/linked.png" class="linked" title="Linkedin Douglas Henrique">
+                      </a>
+                      <a href="https://github.com/Djgoliveira">
+                          <img src="./img/gitHub.png" title="GitHub Douglas Henrique" alt="GitHub">
+                      </a>
+                  </div>
+              </div>     
+              <div class="item-rodape">
                 <p class="nomes">Gustavo Florencio</p>
                 <p class="dev">Responsável pelo desenvolvimento do site</p>
                 <div class="links">
-                    <a href="https://www.linkedin.com/">
-                        <img src="../img/linked.png" class="linked" title="Linkedin Gustavo Florencio">
+                    <a href="https://www.linkedin.com/in/douglas-oliveira-86420372/">
+                        <img src="./img/linked.png" class="linked" title="Linkedin Douglas Henrique">
                     </a>
-                    <a href="https://github.com/mcnunesm">
-                        <img src="../img/gitHub.png" title="GitHub Gustavo Florencio">
+                    <a href="https://github.com/Djgoliveira">
+                        <img src="./img/gitHub.png" title="GitHub Douglas Henrique" alt="GitHub">
                     </a>
-                    
                 </div>
-            </div>
+            </div>    
             <div class="item-rodape">
-                <p class="nomes">Rafael</p>
-                <p class="dev">Responsável pelo desenvolvimento do site</p>
-                <div class="links">
-                    <a href="#">
-                        <img src="../img/linked.png" class="linked" title="Linkedin Rafael">
-                    </a>
-                    <a href="https://github.com/">
-                        <img src="../img/gitHub.png" title="GitHub Rafael ">
-                    </a>
-                    
-                </div>
-            </div>
-
-        </div>
-
-        <p class="rodape-fim">Checkpoint 3 desenvolvido em 2023</p>
-
-    </footer>
-    <script>
-        if (document.querySelector('body').offsetHeight > window.innerHeight)
-          document.querySelector('footer').classList.add('footer-relative');
-    </script>
-    --> 
-        </html>
+              <p class="nomes">Rafael</p>
+              <p class="dev">Responsável pelo desenvolvimento do site</p>
+              <div class="links">
+                  <a href="https://www.linkedin.com/in/douglas-oliveira-86420372/">
+                      <img src="./img/linked.png" class="linked" title="Linkedin Douglas Henrique">
+                  </a>
+                  <a href="https://github.com/Djgoliveira">
+                      <img src="./img/gitHub.png" title="GitHub Douglas Henrique" alt="GitHub">
+                  </a>
+              </div>
+          </div>            
+          </div>  
+          <p class="rodape-fim">Checkpoint 3 desenvolvido em 2022</p>
+        </footer>           
+      </body>      
+    
+         </html>
