@@ -7,8 +7,7 @@
 
   header {
     width: 100%;
-    position: sticky;
-    z-index: 999;
+    
     top: 0;
     left: 0;
 }
@@ -52,7 +51,9 @@ li:hover {
   body{
     margin:10px;
     background-color: #066a75;
-    height: 80%;
+    height: 70%;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
   
   a{
@@ -205,9 +206,9 @@ li:hover {
   #cards{
     position: absolute;
     top: 0px;
-    width: 88%; 
-    padding: 18px 6% 60px 6%;
-    margin: 0 0 35px 0;
+    width: 86%; 
+    padding: 15px 6% 40px 6%;
+    margin: 0 0 25px 0;
     background: rgb(247, 247, 247);
     border: 1px solid rgba(147, 184, 189,0.8);
     border-radius: 5px;
@@ -283,7 +284,7 @@ li:hover {
   }
   
   footer{
-   position:fixed;
+   bottom: auto;
    width: 100%;
    text-align: center;
    color: rgb(255, 255, 255);
@@ -294,8 +295,10 @@ li:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #171717;
+    background-color: #000000;
     padding: 10px;
+    width: 100%;
+    margin-bottom: -15px;
 }
 
 .item-rodape {
@@ -304,31 +307,43 @@ li:hover {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    padding: 15px;
 }
 
 .rodape-fim {
     background-color: #171717;
     text-align: center;
-    padding: 15px;
+    height: 80px;
+    padding: 25px;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
 }
+.foto {
+  display: flex;
+}
 
+.foto img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  margin-left: 20px;
+}
 
 
 .banner-cards {
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    background-color: #171717;
-    
+    justify-content: space-around; 
+    flex-flow: row wrap;    
+    background-color: #ffffff;
+    margin-top: 40px;    
 }
 
-.card-img {
-    height: 650px;
-    display: inline;
+.card-filme {
+    height: 200px;
+    display: inline-block;
+    align-items: center;
 }
 
 #itens {
@@ -337,33 +352,39 @@ li:hover {
     text-align: center;
 }
 
-.cards {
+.card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     margin: 20px;
     text-align: center;
+    border-radius: 15px;
+    width: 500px;
 }
 
-.titulos {
-    font-size: 24px;
-    line-height: 28px;
+.titulos-card{
+  justify-content: center;
+    font-size: 25px;
+    line-height: 30px;
     font-weight: 700;
     padding: 10px;
 }
 
+
 .texto-img {
-    background-color: #f4f4f4;
-    position: relative;
+  color: #066a75;
+      position: relative;
     border-radius: 10px;
-    padding: 10px;
-    width: 329px;
-    height: 386px;
+    padding-left: 20px; 
+    padding-right: 20px; 
+    width: 500px;
+    height: 250px;
+    text-align: justify;
 }
 
 .descricao {
-    width: 311px;
+    width: 500px;
     font-size: 15px;
     line-height: 21px;
     font-weight: 290;
