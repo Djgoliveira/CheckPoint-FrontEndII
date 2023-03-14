@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
             body {min-height: 100%}
-            footer {position: absolute; height: 2.5rem; width: 100%; bottom: 0}
+            footer {position: relative; height: 3.0rem; width: 99%; bottom: 0 ; align-items: center; padding-top: 5%;}
             .position-relative {position: relative}
           </style>
       </head>
@@ -49,17 +49,8 @@
                   <label for="email_cad">Descrição</label>
                   <textarea id="descricao_cad" rows="10" cols="60" required="required" minlength="4"></textarea>                  
                 </p>
-
-                <p>
-                  <label for="senha_cad">Já visitou</label>
-                  <input id="checkbox_01" name="senha_cad" type="checkbox"/>
-
-                  <label for="senha_cad">Vai visitar</label>
-                  <input id="checkbox_01" name="senha_cad" type="checkbox"/>
-                  
-                </p>
                 <div> 
-                  <input id="btn" type="submit" value="Cadastrar"/> 
+                  <input id="btn" type="submit" value="Cadastrar" onclick="Cadrastrar()"/> 
                   <button type="reset" value="limpar">Limpar</button>
                 </div>
               </div>

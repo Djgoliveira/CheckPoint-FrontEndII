@@ -292,6 +292,10 @@ li:hover {
    color: rgb(255, 255, 255);
   }
 
+  #checkbox_02{
+    width: 100px;
+      }
+
  
   #rodape {
     display: flex;
@@ -313,6 +317,7 @@ li:hover {
 }
 
 .rodape-fim {
+    width: 99%;
     background-color: #171717;
     text-align: center;
     height: 80px;
@@ -322,24 +327,12 @@ li:hover {
     font-size: 15px;
     line-height: 21px;
 }
-.foto {
-  display: flex;
-}
-
-.foto img {
-  height: 60px;
-  width: 60px;
-  border-radius: 50px;
-  margin-left: 20px;
-}
-
-
 .banner-cards {
     display: flex;
     justify-content: space-around; 
     flex-flow: row wrap;    
     background-color: #ffffff;
-    margin-top: 40px;    
+    margin-top: 10%;    
 }
 
 .card-filme {

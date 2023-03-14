@@ -10,11 +10,6 @@ function PontosTuristicos(imageUrl, cidade, pontoTuristico, descricao) {
     this.descricao = descricao;
 }
 
-let btnCadastrar = document.getElementById("btn");
-btnCadastrar.addEventListener("click", function(){
-    Cadrastrar();
-});
-
 let listaPontoTuristicos =[];
 
 function Cadrastrar(){
@@ -25,35 +20,18 @@ function Cadrastrar(){
     const descricaoCidade = document.getElementById("descricao_cad");
 
     const n = new PontosTuristicos(imgUrl.value,nomeCidade.value ,pontoTuristico.value,descricaoCidade.value);
-    if (nomeCidade.value == 0 ) { 
-        alert(`você não preencheu o nome da Cidade`);
-    }else if (pontoTuristico.value == 0 ) { 
-        alert(`você não preencheu o nome do local`);
-    }else if (imgUrl.value == 0 ) { 
-        alert(`você não preencheu a Url da Imagem`);
-    }else if (descricaoCidade.value == 0 ) { 
-        alert(`você não preencheu a descrição`);
-    }    else {
+    if (nomeCidade.value && pontoTuristico.value && imgUrl.value && descricaoCidade.value) { 
         listaPontoTuristicos.push(n);   
-        rendenizarCards(); 
-    }
-
-    
-       
+        rendenizarCards();    
+    }    
 };
 
-
-
 function rendenizarCards(){
-
     let novaDiv = document.createElement("div");
         novaDiv.setAttribute("class", "cards");
-
     // percorrer a lista de ponto turisticos
-    for (const card of listaPontoTuristicos) {        
-        
-
-            novaDiv.innerHTML = `   <div class="card-filme">                              
+    for (const card of listaPontoTuristicos) {     
+                    novaDiv.innerHTML = `   <div class="card-filme">                              
                                     <h1 class ="titulos-card">${card.cidade}</h1>
                                     <h2 class ="titulos-card">${card.pontoTuristico}</h2>
                                     <img src="${card.imageUrl}" class ="card">
