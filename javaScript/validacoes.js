@@ -21,7 +21,8 @@ cidadeValidacao.addEventListener("keyup", function(){
     } else {
         cidadeValidacao.style.backgroundColor = "#ffffff";
         validacao.innerText = "Campo obrigatorio com 4 letras no minimo";
-        validacao.style.color="red";      
+        validacao.style.color="red"; 
+        btnValidacao.setAttribute("disabled", true);        
     }
 })
 
@@ -35,7 +36,8 @@ pontoTuristicoValidacao.addEventListener("keyup", function(){
     } else {
         pontoTuristicoValidacao.style.backgroundColor = "#ffffff";
         validacao.innerText = "Campo obrigatorio com 4 letras no minimo";
-        validacao.style.color="red";       
+        validacao.style.color="red";
+        btnValidacao.setAttribute("disabled", true);          
     }   
 })
 
@@ -50,7 +52,8 @@ imgValidacao.addEventListener("keyup", function(){
     } else {
         imgValidacao.style.backgroundColor = "#ffffff";
         validacao.innerText = "Campo obrigatorio com no minimo um endereço válido ex: Http ou Https";
-        validacao.style.color="red";        
+        validacao.style.color="red";
+        btnValidacao.setAttribute("disabled", true);        
     }   
 })
 
@@ -67,7 +70,8 @@ descricaoCidadeValidacao.addEventListener("keyup", function(){
         descricaoCidadeValidacao.style.backgroundColor = "#ffffff";
         validacao.innerText = "Campo obrigatorio com 4 letras no minimo";
         validacao.style.color="red"; 
-        btnValidacao.style.backgroundColor="gray" ;                    
+        btnValidacao.style.backgroundColor="gray" ; 
+                          
     }    
 })
 
