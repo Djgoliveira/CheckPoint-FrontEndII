@@ -1,5 +1,6 @@
 //Vamos criar agora a primeira Div para colocar os elementos dentro
 //criando a div
+
 let elementoPai = document.getElementById("ElementoPai");
 elementoPai.classList.add('banner-cards');
 
@@ -14,7 +15,6 @@ let listaPontoTuristicos =[];
 
 function Cadrastrar(){
 
-    console.log("Falhou");
     const imgUrl = document.getElementById("url_cad");
     const nomeCidade = document.getElementById("nome_cad");
     const pontoTuristico = document.getElementById("NomeLocal_cad");

@@ -27,7 +27,7 @@
           <div class="content">     
             <!--FORMULÁRIO DE CADASTRO-->
             
-            <form method="dialog" action="" id="cadastro">
+            <form action="#Cards" id="cadastro">
               <div> 
                 <h1>Cadastro de Pontos Turísticos</h1>                  
                 <p> 
@@ -45,6 +45,7 @@
                 <p> 
                     <label for="url_cad">Url da Imagem</label>
                     <input id="url_cad" name="url_cad" required="required" type="text" placeholder="Url da Imagem"/>
+                    <small id="imgSmall"></small>
                 </p>
                  
                 <p> 
@@ -53,8 +54,8 @@
                   <small id="descricaoSmall"></small>
                 </p>
                 <div> 
-                  <input id="btn" type="submit" value="Cadastrar"  onclick="Cadrastrar()"/> 
-                  <!--  <button type="reset" value="limpar">Limpar</button> -->
+                  <button id="btn" type="submit" value="Cadastrar" onclick="Cadrastrar()">Cadastrar</button> 
+                  <!-- <button id="erase" type="reset" value="limpar">Limpar</button> -->
                 </div>
               </div>
                             
@@ -67,9 +68,9 @@
         <div id="ElementoPai">
           <dialog></dialog>
         </div>
-
+        <script src="./javaScript/validacoes.js"></script> 
         <script src="./javaScript/codigo.js"></script>   
-        <script src="./javaScript/validacoes.js"></script>     
+            
 
         <footer>
           <div id="rodape">

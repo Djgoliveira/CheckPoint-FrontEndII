@@ -140,9 +140,8 @@ li:hover {
   }
   
   /*estilo do botão submit */
-  input[type="submit"]{
-    width: 100%!important;
-    cursor: pointer;  
+  button[type="submit"]{
+    width: 100%!important; 
     background: #3d9db3;
     padding: 8px 5px;
     color: #fff;
@@ -156,7 +155,7 @@ li:hover {
     
     transition: all 0.2s linear;
   }
-  input[type="submit"]:hover{
+  button[type="submit"]:hover{
     background: #4ab3c6;
   }
 
@@ -288,6 +287,8 @@ li:hover {
    width: 100%;
   align-items: flex-end;
   margin-top: 2%;
+  margin-left: -20px;
+  
    text-align: center;
    color: rgb(255, 255, 255);
   }
@@ -302,9 +303,9 @@ li:hover {
     justify-content: space-around;
     align-items: center;
     background-color: #000000;
-    padding: 10px;
+    padding: 2%;
     width: 100%;
-    margin-bottom: -15px;
+   margin-bottom: -15px;
 }
 
 .item-rodape {
