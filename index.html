@@ -32,12 +32,14 @@
                 <h1>Cadastro de Pontos Turísticos</h1>                  
                 <p> 
                   <label for="nome_cad">Cidade</label>                  
-                  <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome da Cidade" minlength="4"/>
+                  <input id="nome_cad" name="nome_cad"  required="required" type="text" placeholder="Nome da Cidade" minlength="4" />
+                  <small id="smallCidade"></small>
                 </p>
 
                 <p> 
                   <label for="local_cad">Ponto turistico</label>
                   <input id="NomeLocal_cad" name="NomeLocal_cad" required="required" type="text" placeholder="Nome do local" minlength="4" />
+                  <small id="localSmall"></small>
                 </p>
 
                 <p> 
@@ -47,11 +49,12 @@
                  
                 <p> 
                   <label for="email_cad">Descrição</label>
-                  <textarea id="descricao_cad" rows="10" cols="60" required="required" minlength="4"></textarea>                  
+                  <textarea id="descricao_cad" rows="10" cols="60" required="required" minlength="4"></textarea>
+                  <small id="descricaoSmall"></small>
                 </p>
                 <div> 
-                  <input id="btn" type="submit" value="Cadastrar" onclick="Cadrastrar()"/> 
-                  <button type="reset" value="limpar">Limpar</button>
+                  <input id="btn" type="submit" value="Cadastrar"  onclick="Cadrastrar()"/> 
+                  <!--  <button type="reset" value="limpar">Limpar</button> -->
                 </div>
               </div>
                             
@@ -65,7 +68,7 @@
           <dialog></dialog>
         </div>
 
-        <script src="./javaScript/codigo.js"></script> 
+        <script src="./javaScript/codigo.js"></script>        
 
         <footer>
           <div id="rodape">
