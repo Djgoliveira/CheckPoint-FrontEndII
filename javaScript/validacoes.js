@@ -12,12 +12,17 @@ imgValidacao.setAttribute("disabled", true);
 const descricaoCidadeValidacao = document.getElementById("descricao_cad");
 descricaoCidadeValidacao.setAttribute("disabled", true);
 
+const recarregarCampos = document.getElementById('btn2');
+recarregarCampos.style.backgroundColor = "gray";
+recarregarCampos.setAttribute("disabled", true);
+
 cidadeValidacao.addEventListener("keyup", function(){
     let validacao = document.getElementById("smallCidade");
     if (cidadeValidacao.value.length >= 4) {
         validacao.innerText = "Ok!";
         validacao.style.color="green"; 
-        pontoTuristicoValidacao.removeAttribute("disabled");                            
+        pontoTuristicoValidacao.removeAttribute("disabled"); 
+                                 
     } else {
         cidadeValidacao.style.backgroundColor = "#ffffff";
         validacao.innerText = "Campo obrigatorio com 4 letras no minimo";
@@ -62,10 +67,13 @@ descricaoCidadeValidacao.addEventListener("keyup", function(){
     if (descricaoCidadeValidacao.value.length >= 4) {
         validacao.innerText = "Ok!";
         validacao.style.color="green";
+        btnValidacao.style.backgroundColor="#3d9db3" ;
         btnValidacao.style.cursor = "pointer";
         btnValidacao.removeAttribute("disabled");
-        btnValidacao.style.backgroundColor="#3d9db3" ;
-
+        recarregarCampos.removeAttribute("disabled", true); 
+        recarregarCampos.style.backgroundColor="#3d9db3" ;      
+       
+       
     } else {
         descricaoCidadeValidacao.style.backgroundColor = "#ffffff";
         validacao.innerText = "Campo obrigatorio com 4 letras no minimo";
@@ -74,4 +82,21 @@ descricaoCidadeValidacao.addEventListener("keyup", function(){
                           
     }    
 })
+
+
+//setInterval(recarregarCampo, 10000);
+
+function recarregarCampo() {
+
+if (cidadeValidacao.value.length >=1 && pontoTuristicoValidacao.value.length >=1 && imgValidacao.value.length>=1 && descricaoCidadeValidacao.value.length>=1){
+    cidadeValidacao.value="";
+    pontoTuristicoValidacao.value="";
+    imgValidacao.value="";
+    descricaoCidadeValidacao.value="";
+    }
+}
+  
+ 
+
+
 
