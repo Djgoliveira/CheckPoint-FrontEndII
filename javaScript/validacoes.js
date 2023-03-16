@@ -1,6 +1,9 @@
 // Buscando os itens para serem manipulados;
 
 const btnValidacao = document.getElementById("btn");
+btnValidacao.setAttribute("disabled", true);
+btnValidacao.style.backgroundColor ="gray";
+
 const cidadeValidacao = document.getElementById("nome_cad");
 const pontoTuristicoValidacao = document.getElementById("NomeLocal_cad");
 const imgValidacao = document.getElementById("url_cad");
@@ -18,6 +21,9 @@ cidadeValidacao.addEventListener("keyup", function () {
         cidadeValidacao.style.backgroundColor = "#ffffff";
         validacao.innerText = "Campo obrigatorio com 4 letras no minimo";
         validacao.style.color = "red";
+        btnValidacao.setAttribute("disabled", true);
+        btnValidacao.style.backgroundColor ="gray";
+        btnValidacao.style.cursor="";
     }
 })
 
@@ -31,7 +37,9 @@ pontoTuristicoValidacao.addEventListener("keyup", function () {
         pontoTuristicoValidacao.style.backgroundColor = "#ffffff";
         validacao.innerText = "Campo obrigatorio com 4 letras no minimo";
         validacao.style.color = "red";
-
+        btnValidacao.setAttribute("disabled", true);
+        btnValidacao.style.backgroundColor ="gray";
+        btnValidacao.style.cursor="";
     }
 })
 
@@ -40,12 +48,17 @@ imgValidacao.addEventListener("keyup", function () {
     if (imgValidacao.value.length >= 10) {
         validacao.innerText = "Ok!";
         validacao.style.color = "green";
+        btnValidacao.removeAttribute("disabled", true);
+        btnValidacao.style.backgroundColor ="#39bfd7";
+        btnValidacao.style.cursor="pointer";
 
     } else {
         imgValidacao.style.backgroundColor = "#ffffff";
         validacao.innerText = "Campo obrigatorio com no minimo um endereço válido ex: Http ou Https";
         validacao.style.color = "red";
-
+        btnValidacao.setAttribute("disabled", true);
+        btnValidacao.style.backgroundColor ="gray";
+        btnValidacao.style.cursor="";
     }
 })
 
