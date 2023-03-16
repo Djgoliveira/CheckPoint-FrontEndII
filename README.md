@@ -2,7 +2,7 @@ Douglas Henrique
 |
 Gustavo Florencio
 |
-Rafael 
+Juan Rafael da Costa Ferreira
 
 
 # CheckPoint-FrontEndII
