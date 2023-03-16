@@ -425,6 +425,116 @@ footer {
   padding: 10px;
 }
 
+@media (max-width:438px) {
+
+  a img {
+    visibility: hidden;
+  }
+
+  #descricao_cad {
+    width: 250px;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 290;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  #rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    padding: 2%;
+    width: 450px;
+    margin-bottom: -15px;
+  }
+
+    .lista-menu {
+    visibility: visible;
+    position: absolute;
+    list-style: none;
+    font-size: 20px;
+    color: #171717;
+    width: 90px;
+  }
+  .rodape-fim {
+    width: 100%;
+    background-color: #171717;
+    text-align: center;
+    height: 100px;
+    padding: 25px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .titulos-card {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .menu-topo {
+    visibility: visible;
+    display: flex;
+
+
+  }
+
+  .texto-img {
+    color: #066a75;
+    position: relative;
+    margin-left: 1%;
+    width: 300px;
+    font-size: 10px;
+    height: 350px;
+    text-align: justify;
+  }
+
+  footer {
+    bottom: auto;
+    width: 100%;
+    align-items: flex-end;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    width: 300px;
+  }
+
+  .content {
+    width: 300px;
+    margin: 0px auto;
+    position: relative;
+
+  }
+
+  .container {
+    height: 800px;
+
+  }
+
+  #email_cad {
+    height: 200px;
+    text-align: initial;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
 @media (max-width:423px) {
 
   a img {
@@ -438,6 +548,115 @@ footer {
     font-size: 20px;
     color: #171717;
     width: 90px;
+  }
+
+  .titulos-card {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  .menu-topo {
+    visibility: visible;
+    display: flex;
+
+
+  }
+
+  .texto-img {
+    color: #066a75;
+    position: relative;
+    margin-left: 1%;
+    width: 300px;
+    font-size: 10px;
+    height: 350px;
+    text-align: justify;
+  }
+
+  footer {
+    bottom: auto;
+    width: 100%;
+    align-items: flex-end;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    width: 300px;
+  }
+
+  .content {
+    width: 300px;
+    margin: 0px auto;
+    position: relative;
+
+  }
+
+  .container {
+    height: 800px;
+
+  }
+
+  #email_cad {
+    height: 200px;
+    text-align: initial;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width:312px) {
+
+  a img {
+    visibility: hidden;
+  }
+
+  #descricao_cad {
+    width: 250px;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 290;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  #rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    padding: 2%;
+    width: 350px;
+    margin-bottom: -15px;
+  }
+
+    .lista-menu {
+    visibility: visible;
+    position: absolute;
+    list-style: none;
+    font-size: 20px;
+    color: #171717;
+    width: 90px;
+  }
+  .rodape-fim {
+    width: 100%;
+    background-color: #171717;
+    text-align: center;
+    height: 100px;
+    padding: 25px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
   }
 
   .titulos-card {
